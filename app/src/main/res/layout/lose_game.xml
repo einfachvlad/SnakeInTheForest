@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/startmenubackground" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/loseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="215dp"
+            android:text="@string/loseText"
+            android:textAppearance="@style/levelQuestionStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loseText"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="34dp"
+            android:paddingStart="70dp"
+            android:id="@+id/list_item"
+            >
+
+            <EditText
+                android:id="@+id/playersName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/finalScore"
+                android:layout_toStartOf="@+id/finalScore"
+                android:ems="4"
+                android:inputType="textPersonName"
+                android:text="Player"
+                android:textAppearance="@style/levelQuestionStyle"
+                android:textColor="@color/pauseButtonsColor"
+                style="@style/pauseButtonStyle"/>
+            <TextView
+                android:id="@+id/scoreTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Score:  "
+                android:textAppearance="@style/levelQuestionStyle" />
+            <TextView
+                android:id="@+id/finalScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="@style/levelQuestionStyle" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/okButton"
+            style="@style/menuButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tryAgainButton"
+            android:layout_below="@+id/list_item"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="OK" />
+        <Button
+            android:id="@+id/tryAgainButton"
+            style="@style/menuButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/tryAgainButton"
+            android:layout_below="@+id/list_item"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</FrameLayout>

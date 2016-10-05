@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project5.snakeintheforest.Activities.StartMenuActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/startmenubackground" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/gameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/gametitle" />
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gameTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/menu_button_top_margin"
+            style="@style/menuButtonStyle"
+            android:text="@string/playButtonName" />
+
+        <Button
+            android:id="@+id/leaderboardButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/playButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/menu_button_top_margin"
+            style="@style/menuButtonStyle"
+            android:text="@string/leaderboardButtonName" />
+
+        <Button
+            android:id="@+id/quitButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/leaderboardButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/menu_button_top_margin"
+            style="@style/menuButtonStyle"
+            android:text="@string/quitButtonName"/>
+    </RelativeLayout>
+
+</FrameLayout>

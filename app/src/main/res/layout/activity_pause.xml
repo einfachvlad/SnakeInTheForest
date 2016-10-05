@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pause"
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/pausebackground"
+    tools:context="com.project5.snakeintheforest.Activities.PauseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="@string/continueButton"
+            android:layout_marginTop="2dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/continueButton"
+            android:layout_centerHorizontal="true"
+            style="@style/pauseButtonStyle"
+            />
+
+        <Button
+            android:text="@string/quitButtonName"
+            android:layout_marginTop="20dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/exitToMainActivityButton"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/continueButton"
+            style="@style/pauseButtonStyle"
+
+            />
+    </RelativeLayout>
+</FrameLayout>

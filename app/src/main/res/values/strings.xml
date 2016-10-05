@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Forest Snake</string>
+    <string name="playButtonName">"Play"</string>
+    <string name="leaderboardButtonName">"Leaderboard"</string>
+    <string name="quitButtonName">"Quit"</string>
+    <string name="quitQuestion">"Really quit?"</string>
+    <string name="yes">"Yes"</string>
+    <string name="no">"No"</string>
+    <string name="normalLevel">"Normal"</string>
+    <string name="proLevel">"Pro"</string>
+    <string name="levelQuestion">"Which level would you choose?"</string>
+    <string name="title_activity_choose_level_menu">ChooseLevel</string>
+    <string name="loseText">Game over</string>
+    <string name="tryAgainButton">Try again</string>
+    <string name="continueButton">Continue</string>
+    <string name="backButton">Back</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/startmenubackground" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/levelQuestionStyle"
+            android:text="@string/levelQuestion"
+            android:id="@+id/levelQuestion"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="215dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/normalLevel"
+            android:id="@+id/normalLevelButton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            style="@style/menuButtonStyle"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proLevel"
+            android:id="@+id/proLevelButton"
+            style="@style/menuButtonStyle"
+            android:layout_below="@+id/normalLevelButton"
+            android:layout_alignStart="@+id/normalLevelButton"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+</FrameLayout>
